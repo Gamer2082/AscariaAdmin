@@ -1,0 +1,13 @@
+name: ascariaAdminTools
+version: '${version}'
+author: Gamer_m2082
+main: fr.gamer_m2082.ascariaadmin.AscariaAdminTools
+api-version: 1.16
+
+commands:
+  help:
+    permission: admin.use
+    description: get list of plugin functionality
+  admin:
+    permission: admin.admin
+    description: set admin to admin mod
