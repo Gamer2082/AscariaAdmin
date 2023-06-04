@@ -15,13 +15,6 @@ public class CommandHelpExecutor implements CommandExecutor {
 
             player.sendMessage("----PLUGIN HELP----");
             player.sendMessage("§6/admin : set your admin mode to on");
-            player.sendMessage("");
-            player.sendMessage("");
-            player.sendMessage("");
-            player.sendMessage("");
-            player.sendMessage("");
-            player.sendMessage("");
-            player.sendMessage("");
             player.sendMessage("-------------------");
 
         } else if (args.length == 1) {
