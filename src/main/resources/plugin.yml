@@ -6,8 +6,13 @@ api-version: 1.16
 
 commands:
   help:
+    usage: /help
+    aliases:
+      - aide
     permission: admin.use
     description: get list of plugin functionality
+
   admin:
-    permission: admin.admin
+    usage: /admin
+    permission: admin.adminmodo
     description: set admin to admin mod

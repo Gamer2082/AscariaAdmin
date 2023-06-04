@@ -1,4 +1,4 @@
-package fr.gamer_m2082.ascariaadmin.command;
+package fr.gamer_m2082.ascariaadmin;
 
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -13,8 +13,6 @@ public class CommandHelpExecutor implements CommandExecutor {
 
         if (args.length == 0){
 
-
-
             player.sendMessage("----PLUGIN HELP----");
             player.sendMessage("§6/admin : set your admin mode to on");
             player.sendMessage("");
@@ -26,10 +24,6 @@ public class CommandHelpExecutor implements CommandExecutor {
             player.sendMessage("");
             player.sendMessage("-------------------");
 
-
-
-
-
         } else if (args.length == 1) {
 
 
@@ -37,7 +31,7 @@ public class CommandHelpExecutor implements CommandExecutor {
         }
 
 
-        return false;
+        return true;
     }
 
 

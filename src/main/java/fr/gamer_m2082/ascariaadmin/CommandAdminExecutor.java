@@ -1,4 +1,4 @@
-package fr.gamer_m2082.ascariaadmin.command;
+package fr.gamer_m2082.ascariaadmin;
 
 import org.bukkit.ChatColor;
 import org.bukkit.GameMode;
