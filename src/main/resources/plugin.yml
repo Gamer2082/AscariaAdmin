@@ -6,9 +6,9 @@ api-version: 1.16
 
 commands:
   help:
-    usage: /help
+    usage: /helpAscariaTools
     aliases:
-      - aide
+      - aideAscariaTools
     permission: admin.use
     description: get list of plugin functionality
 
@@ -16,3 +16,7 @@ commands:
     usage: /admin
     permission: admin.adminmodo
     description: set admin to admin mod
+  test:
+    usage: /test
+    permission: admin.devStrat
+    description: Test if plugin start

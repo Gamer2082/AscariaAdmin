@@ -1,5 +1,6 @@
 package fr.gamer_m2082.ascariaadmin;
 
+import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -14,7 +15,7 @@ public class CommandHelpExecutor implements CommandExecutor {
         if (args.length == 0){
 
             player.sendMessage("----PLUGIN HELP----");
-            player.sendMessage("§6/admin : set your admin mode to on");
+            player.sendMessage(ChatColor.GREEN + "/admin : set your admin mode to on");
             player.sendMessage("-------------------");
 
         } else if (args.length == 1) {

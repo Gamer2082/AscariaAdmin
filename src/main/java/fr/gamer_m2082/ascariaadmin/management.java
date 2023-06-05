@@ -10,7 +10,7 @@ public class management {
     public static void load() {
         // Load text
         String startText = "Ascaria Admin plugin \n " +
-            " By GAmer_m2082 \n" +
+            " By Gamer_m2082 \n" +
             " Start load \n" +
             " Load status successful \n "+
             " /Help inGame for more \n"+
