@@ -3,7 +3,7 @@ plugins {
 }
 
 group = 'fr.gamer_m2082'
-version = '1.0'
+version = '1.1.0'
 
 repositories {
     mavenCentral()
