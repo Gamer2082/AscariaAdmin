@@ -14,7 +14,7 @@ public class CommandAdminExecutor implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if (!(sender instanceof Player)) {
-            sender.sendMessage(ChatColor.RED + "Viens en pour cette command ?");
+            sender.sendMessage(ChatColor.RED + "Viens jeux en pour cette command ?");
             return true;
         }
 
@@ -27,11 +27,6 @@ public class CommandAdminExecutor implements CommandExecutor {
     private void toggleAdminMode(Player player) {
 
         // get
-        boolean isFlight = player.getAllowFlight();
-        String displaneName = player.getDisplayName();
-        float flySpeed = player.getFlySpeed();
-        String CustomName = player.getCustomName();
-        String playerListName = player.getPlayerListName();
         GameMode Gamemode = player.getGameMode();
 
         if (!onAdmin) {
@@ -44,18 +39,18 @@ public class CommandAdminExecutor implements CommandExecutor {
             player.setGameMode(GameMode.CREATIVE);
             player.setCollidable(false);
             onAdmin = true;
-            player.sendMessage("Mode administrateur activé");
+            player.sendMessage(ChatColor.GREEN+"Mode administrateur ON");
         } else {
             // Désactiver le mode administrateur
-            player.setAllowFlight(isFlight);
+            player.setAllowFlight(false);
             player.setDisplayName(player.getName());
-            player.setFlySpeed(flySpeed);
+            player.setFlySpeed(1.5f);
             player.setCustomName(null);
-            player.setPlayerListName(playerListName);
+            player.setPlayerListName(player.getName());
             player.setGameMode(Gamemode);
             player.setCollidable(true);
             onAdmin = false;
-            player.sendMessage("Mode administrateur désactivé");
+            player.sendMessage(ChatColor.RED+"Mode administrateur OFF");
         }
     }
 }

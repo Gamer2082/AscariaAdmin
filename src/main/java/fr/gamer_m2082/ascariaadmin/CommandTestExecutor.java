@@ -29,9 +29,9 @@ public class CommandTestExecutor implements CommandExecutor {
                     " By Gamer_m2082 \n" +
                     " Start load \n" +
                     " Load status successful \n "+
-                    " /Help inGame for more \n"+
+                    " Ascaria inGame for more \n"+
                     " On ready";
-            Bukkit.getConsoleSender().sendMessage( ChatColor.GREEN + startText);
+            player.sendMessage(ChatColor.GREEN + startText);
 
             return true;
         }

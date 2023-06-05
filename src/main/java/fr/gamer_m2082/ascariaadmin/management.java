@@ -13,7 +13,7 @@ public class management {
             " By Gamer_m2082 \n" +
             " Start load \n" +
             " Load status successful \n "+
-            " /Help inGame for more \n"+
+            " /Ascaria inGame for more \n"+
             " On ready";
         Bukkit.getConsoleSender().sendMessage( ChatColor.GREEN + startText);
 

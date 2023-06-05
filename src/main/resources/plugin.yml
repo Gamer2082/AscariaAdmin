@@ -6,9 +6,9 @@ api-version: 1.16
 
 commands:
   help:
-    usage: /helpAscariaTools
+    usage: /Ascaria
     aliases:
-      - aideAscariaTools
+      - aideAscaria
     permission: admin.use
     description: get list of plugin functionality
 

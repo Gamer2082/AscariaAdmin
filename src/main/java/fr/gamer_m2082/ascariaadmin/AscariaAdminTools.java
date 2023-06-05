@@ -13,7 +13,7 @@ public final class AscariaAdminTools extends JavaPlugin {
         management.load();
 
         getCommand("test").setExecutor(new CommandTestExecutor());
-        getCommand("help").setExecutor(new CommandHelpExecutor());
+        getCommand("Ascaria").setExecutor(new CommandHelpExecutor());
         getCommand("admin").setExecutor(new CommandAdminExecutor());
 
     }
